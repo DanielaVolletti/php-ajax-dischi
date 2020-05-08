@@ -7,21 +7,21 @@ function creaDischi(){
       console.log(data);
       for (var key in data) {
         console.log(data[key]);
-        var singoloFilm = data[key];
+        var singolaCanzone = data[key];
 
         // inizializzo handlebar
-        var source = $('#film-template').html();
+        var source = $('#canzone-template').html();
         var template = Handlebars.compile(source);
         var context = {
-            'img': singoloFilm.poster,
-            'title': singoloFilm.title,
-            'author': singoloFilm.author,
-            'year': singoloFilm.year
+            'img': singolaCanzone.poster,
+            'title': singolaCanzone.title,
+            'author': singolaCanzone.author,
+            'year': singolaCanzone.year
           };
         var html = template(context);
 
-        $('.container-film').append(html);
-          
+        $('.container-canzoni').append(html);
+
 
       }
     },

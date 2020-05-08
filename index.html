@@ -2,21 +2,28 @@
 <html lang="it" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Films</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Canzoni</title>
   </head>
   <body>
-    <div class="container-film">
+
+    <div class="container-canzoni">
 
     </div>
 
-    <!-- handlebar -->
-    <script id="film-template" type="text/x-handlebars-template">
-      <div class="film">
-        <img src="{{{img}}}" alt="">
-        <h1>{{title}}</h1>
-        <h4>{{author}}</h4>
-        <h4>{{year}}</h4>
 
+
+    <!-- handlebar -->
+    <script id="canzone-template" type="text/x-handlebars-template">
+      <div class="canzone">
+        <div class="poster">
+          <img src="{{img}}" alt="poster ">
+        </div>
+        <div class="info-canzone">
+          <h1>{{title}}</h1>
+          <h4>{{author}}</h4>
+          <h4>{{year}}</h4>
+        </div>
       </div>
     </script>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>

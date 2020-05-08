@@ -1,0 +1,58 @@
+/* regole generali */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #252E38;
+}
+
+/* regole container canzoni */
+.container-canzoni {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+  margin: 10% 20%;
+}
+
+/* regole blocco canzone */
+.canzone {
+  height: 320px;
+  width: calc((100% / 4) - 4%);
+  margin: 1%;
+  padding: 1%;
+  background: #2E3A46;
+}
+
+/* blocco poster */
+.poster {
+  height: 50%;
+  width: auto;
+}
+
+.poster img {
+  height: 100%;
+  width: 100%;
+}
+
+/* blocco info canzone */
+.info-canzone {
+  height: 50%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.info-canzone h1 {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.info-canzone h4 {
+  color: grey;
+}
