@@ -8,10 +8,20 @@ function creaDischi(){
       for (var key in data) {
         console.log(data[key]);
         var singoloFilm = data[key];
-        for (var key in singoloFilm) {
-          console.log(singoloFilm[key]);
-          $('.container-film').append(singoloFilm[key] + '<br>');
-        }
+
+        // inizializzo handlebar
+        var source = $('#film-template').html();
+        var template = Handlebars.compile(source);
+        var context = {
+            'img': singoloFilm.poster,
+            'title': singoloFilm.title,
+            'author': singoloFilm.author,
+            'year': singoloFilm.year
+          };
+        var html = template(context);
+
+        $('.container-film').append(html);
+          
 
       }
     },
